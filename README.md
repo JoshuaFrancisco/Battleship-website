@@ -10,4 +10,4 @@ Description: A two team partner project for Web Development class intentionally 
 XAMPP - For Database, local hosting
 Notepad or Sublime Text for CSS/HTML/PHP/JavaScript files.
 
-A README.txt with instructrions on how to run these files are included in the reversigame folder. All File names are named accordingly, and are made to be self explanatory to the user. 
+A README.txt with instructrions on how to run these files are included in the battleship folder. All File names are named accordingly, and are made to be self explanatory to the user. 
