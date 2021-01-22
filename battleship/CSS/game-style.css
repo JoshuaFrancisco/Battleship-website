@@ -1,0 +1,166 @@
+/* Makes Sizing of Elements easier*/
+*, *::before, *::after {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Button */
+.btn {
+  font-size: inherit;
+  background-color: grey;
+  padding: .2em 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: .2em;
+  color: black;
+}
+
+
+/* Changes button to darker color when you hover over a button*/
+.btn:hover, .btn:focus {
+  background-color: darkgrey;
+}
+
+.splash-btn {
+  font-size: 3rem;
+  margin-left: 3rem;
+}
+
+.splash-btn:first-child {
+  margin-left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.battleship-grid {
+  margin: 3vmin;
+  display: grid;
+  background-color: hsl(200, 74%, 62%);
+  grid-template-rows: repeat(10, 3.5vmin);
+  grid-template-columns: repeat(10, 3.5vmin);
+}
+
+.grid-computer > .taken,
+.grid-computer > .hit {
+  background-color: hsl(200, 74%, 62%) !important; /*Blends computer ship color with board */
+  border-radius: 0 !important;
+}
+
+.taken,
+.ship {
+  position: relative;
+  background-color: hsl(240, 29%, 28%);
+}
+
+.grid-display {
+  display: flex;
+}
+
+/* Makes each ship perfectly match up to grid */
+.ship > div {
+  width: 3.5vmin;
+  height: 3.5vmin;
+}
+
+.ship {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vmin;
+  width: calc(3.5vmin * var(--width, 1));
+  height: calc(3.5vmin * var(--height, 1));
+}
+
+/* Adds gridline to player and computer grid */
+.battleship-grid div {
+  border: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.destroyer-container {
+  --width: 2;
+}
+
+.destroyer-container-vertical {
+  --height: 2;
+  --width: 1;
+}
+
+.submarine-container,
+.cruiser-container {
+  --width: 3;
+}
+
+.submarine-container-vertical,
+.cruiser-container-vertical {
+  --height: 3;
+  --width: 1;
+}
+
+.battleship-container {
+  --width: 4;
+}
+
+.battleship-container-vertical {
+  --height: 4;
+  --width: 1;
+}
+
+.carrier-container {
+  --width: 5;
+}
+
+.carrier-container-vertical {
+  --height: 5;
+  --width: 1;
+}
+
+.hidden-info {
+  font-size: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-text {
+  margin: 1rem;
+}
+
+.miss,
+.hit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Centers hit and misses on player and computer*/
+.hit::after,
+.miss::after {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  width: 3vmin;
+  height: 3vmin;
+}
+
+.miss::after {
+  background-color: white;
+}
+
+.hit::after {
+  background-color: darkred;
+}
+
+.miss::before {
+  content: '';
+  position: absolute;
+  border: 1vmin solid white;
+  border-radius: 100%;
+  width: 3vmin;
+  height: 3vmin;
+}
+
+.player {
+  margin: 2vmin;
+}
