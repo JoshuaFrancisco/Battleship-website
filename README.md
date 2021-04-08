@@ -2,7 +2,7 @@
 
 ### Created by Rosslyn Vicente & Joshua Francisco
 
-Currently a functional Battleship game but unfunctional back-end as it be hosted and ran locally. 
+Currently a functional Battleship game but unfunctional back-end as it needs to be hosted and ran locally. 
 
 Description: A two team partner project for Web Development class intentionally made in LAMP stack with each team member utlizing full-stack development by using HTML, CSS, PHP, JavaScript, and SQL. A Battleship Game website with a database through an open-source cross-platform web server solution stack package (XAMPP) using an Apache HTTP Server and with an open source administration tool MariaDB. 
 
